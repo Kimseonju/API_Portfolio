@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4141517e-d526-4d30-abef-91fdb004f359}</ProjectGuid>
+    <RootNamespace>GameEngineAppksj</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>EngineApp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\EngineBase\;..\EnginePlatform\;..\EngineClient\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\EngineBase\;..\EnginePlatform\;..\EngineClient\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/RTC1 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActiveItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Active_Kamikaze.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Active_Necronomicon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="BombEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BombUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BonFire.cpp" />
+    <ClCompile Include="Boomfly.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BoomflyFSM.cpp" />
+    <ClCompile Include="BossAniActors.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BossUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BoxItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BoxItemFSM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CCharacterInfo.cpp" />
+    <ClCompile Include="CoinUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ControlsBackground.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Costume_catoninetails.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_HolyGrail.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_HolyGrail_Body.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_Momslipstick.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_mutantspider.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_SadOnion.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_spoonbender.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Costume_wirehanger.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Deathshead.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DeathsheadFSM.cpp" />
+    <ClCompile Include="DieUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Dinga.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DingaFSM.cpp" />
+    <ClCompile Include="Dip.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DipFSM.cpp" />
+    <ClCompile Include="Door.cpp" />
+    <ClCompile Include="EndScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyDieEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EnemyTear.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FadeActor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Familiar.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Familiar_brotherbobby.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Familiar_littlechad.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Familiar_sackofpennies.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Familiar_sistermaggie.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Fly.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FlyBoss.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Fly_Base.cpp" />
+    <ClCompile Include="full_fly.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="full_flyFSM.cpp" />
+    <ClCompile Include="HeartEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Horf.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HorfFSM.cpp" />
+    <ClCompile Include="Host.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HostFSM.cpp" />
+    <ClCompile Include="HPUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Itemaltar.cpp" />
+    <ClCompile Include="ItemEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_Active_Kamikaze.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_Active_Necronomicon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_catoninetails.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_brotherbobby.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_littlechad.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_sackofpennies.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_sistermaggie.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_haloofflies.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_HolyGrail.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_lunch.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_momslipstick.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_mutantspider.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_Polyphemus.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_spoonbender.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_thesadonion.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Item_Wirecoathanger.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="KeyUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LogicValue.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MapCollider.cpp" />
+    <ClCompile Include="MiniMap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MomBody.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MomBodyFSM.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MOMBoss.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MomBossFSM.cpp" />
+    <ClCompile Include="MomLeg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MomLegFSM.cpp" />
+    <ClCompile Include="Moms_hand.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Moms_handFSM.cpp" />
+    <ClCompile Include="Nerveending.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="NeveendingFSM.cpp" />
+    <ClCompile Include="Onetooth.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="OnetoothFSM.cpp" />
+    <ClCompile Include="PickUpItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitBottom.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitCenter.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitLeft.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitLeftBottom.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitLeftTop.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitRight.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitRightBottom.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitRightTop.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PitTop.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PlayBackGround.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerFSM.cpp" />
+    <ClCompile Include="Player_Collision.cpp" />
+    <ClCompile Include="Player_ItemCostume.cpp" />
+    <ClCompile Include="Player_State.cpp" />
+    <ClCompile Include="PlayFadeOut.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp" />
+    <ClCompile Include="PoofEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Poop.cpp" />
+    <ClCompile Include="Pooter.cpp" />
+    <ClCompile Include="Pooter_Base.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ProtectionFly.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Psychicmaw.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PsychicmawFSM.cpp" />
+    <ClCompile Include="Psychic_horf.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Psychic_horfFSM.cpp" />
+    <ClCompile Include="Redboomfly.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RedboomflyFSM.cpp" />
+    <ClCompile Include="Redmaw.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RedmawFSM.cpp" />
+    <ClCompile Include="RoomEditor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RoomEditorBackground.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RoomInfo.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SelectBackGround.cpp" />
+    <ClCompile Include="SelectFadeIn.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SelectMouse.cpp" />
+    <ClCompile Include="SelectScene.cpp" />
+    <ClCompile Include="ShopItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Spikes.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Squirt.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SquirtFSM.cpp" />
+    <ClCompile Include="Stone.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Sucker.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SuckerFSM.cpp" />
+    <ClCompile Include="Tears.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround_ksj.cpp" />
+    <ClCompile Include="TitleBackSelect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="Title_Start.cpp" />
+    <ClCompile Include="Title_Title.cpp" />
+    <ClCompile Include="Turret.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TurretFSM.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Active_Kamikaze.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Active_Necronomicon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="BombEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BombUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BonFire.h" />
+    <ClInclude Include="Boomfly.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossAniActors.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BoxItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CCharacterInfo.h" />
+    <ClInclude Include="CoinUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ControlsBackground.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Costume_catoninetails.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_HolyGrail.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_HolyGrail_Body.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_Momslipstick.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_mutantspider.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_SadOnion.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_spoonbender.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Costume_wirehanger.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Deathshead.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DieUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Dinga.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Dip.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Door.h" />
+    <ClInclude Include="EndScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyDieEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EnemyTear.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FadeActor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Familiar.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Familiar_brotherbobby.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Familiar_littlechad.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Familiar_sackofpennies.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Familiar_sistermaggie.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Fly.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FlyBoss.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="full_fly.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HeartEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Horf.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Host.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HPUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Itemaltar.h" />
+    <ClInclude Include="ItemEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_Active_Kamikaze.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_Active_Necronomicon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_catoninetails.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_brotherbobby.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_littlechad.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_sackofpennies.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_sistermaggie.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_haloofflies.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_HolyGrail.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_lunch.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_momslipstick.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_mutantspider.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_Polyphemus.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_spoonbender.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_thesadonion.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Item_Wirecoathanger.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="KeyUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LogicValue.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MapCollider.h" />
+    <ClInclude Include="MiniMap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MomBody.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MOMBoss.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MomLeg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Moms_hand.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Nerveending.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Onetooth.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PickUpItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitBottom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitCenter.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitLeft.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitLeftBottom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitLeftTop.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitRight.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitRightBottom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitRightTop.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PitTop.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PlayBackGround.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Player_ItemCostume.h" />
+    <ClInclude Include="PlayFadeOut.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h" />
+    <ClInclude Include="PoofEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Poop.h" />
+    <ClInclude Include="Pooter.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ProtectionFly.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Psychicmaw.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Psychic_horf.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Redboomfly.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Redmaw.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoomEditor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoomEditorBackground.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoomInfo.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SelectBackGround.h" />
+    <ClInclude Include="SelectFadeIn.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SelectMouse.h" />
+    <ClInclude Include="SelectScene.h" />
+    <ClInclude Include="ShopItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Spikes.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Squirt.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stone.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Sucker.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Tears.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround_ksj.h" />
+    <ClInclude Include="TitleBackSelect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="Title_Start.h" />
+    <ClInclude Include="Title_Title.h" />
+    <ClInclude Include="Turret.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

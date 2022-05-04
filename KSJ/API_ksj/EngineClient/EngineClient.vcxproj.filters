@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{910cfa39-f698-4fef-941b-742d6097e1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{34a4f59f-7b99-4617-b9ca-df100172c897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineScene.cpp" />
+    <ClCompile Include="EngineSceneManager.cpp" />
+    <ClCompile Include="EngineActor.cpp" />
+    <ClCompile Include="EngineRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineRendererBasic.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineRendererAnim.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineWindowResMgr.cpp" />
+    <ClCompile Include="EngineCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EngineScene.h" />
+    <ClInclude Include="EngineSceneManager.h" />
+    <ClInclude Include="EngineActor.h" />
+    <ClInclude Include="EngineClientPublic.h" />
+    <ClInclude Include="EngineRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineRendererBasic.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineRendererAnim.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineWindowResMgr.h" />
+    <ClInclude Include="EngineCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

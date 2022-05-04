@@ -1,0 +1,956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="TitleBackGround_ksj.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Title_Title.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Title_Start.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Contents\Actor\Play\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Contents\Actor\Play\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharacterInfo.cpp">
+      <Filter>Contents\Actor\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectBackGround.cpp">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectMouse.cpp">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="Tears.cpp">
+      <Filter>Contents\Actor\Play\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomInfo.cpp">
+      <Filter>Contents\Actor\Play\RoomInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="PickUpItem.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PickUpItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Itemaltar.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMap.cpp">
+      <Filter>Contents\Actor\UI\MiniMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Player_State.cpp">
+      <Filter>Contents\Actor\Play\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeActor.cpp">
+      <Filter>Contents\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectFadeIn.cpp">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicValue.cpp" />
+    <ClCompile Include="Fly.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Fly</Filter>
+    </ClCompile>
+    <ClCompile Include="Fly_Base.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Fly</Filter>
+    </ClCompile>
+    <ClCompile Include="Pooter_Base.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Pooter</Filter>
+    </ClCompile>
+    <ClCompile Include="Pooter.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Pooter</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTear.cpp">
+      <Filter>Contents\Actor\Play\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Player_Collision.cpp">
+      <Filter>Contents\Actor\Play\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MapCollider.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayBackGround.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayFadeOut.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyBoss.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerFSM.cpp">
+      <Filter>Contents\Actor\Play\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomEditor.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomEditorBackground.cpp">
+      <Filter>Contents\Actor\RoomEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="BossAniActors.cpp">
+      <Filter>Contents\Actor\Play\BossAniActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Object\Bomb</Filter>
+    </ClCompile>
+    <ClCompile Include="BossUI.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPUI.cpp">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BombUI.cpp">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CoinUI.cpp">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyUI.cpp">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Poop.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Stone.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="BonFire.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Object\BonFire</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Horf.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Horf</Filter>
+    </ClCompile>
+    <ClCompile Include="Boomfly.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\BoomFly</Filter>
+    </ClCompile>
+    <ClCompile Include="Redboomfly.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redboomfly</Filter>
+    </ClCompile>
+    <ClCompile Include="full_fly.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\full_fly</Filter>
+    </ClCompile>
+    <ClCompile Include="Psychicmaw.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychicmaw</Filter>
+    </ClCompile>
+    <ClCompile Include="Onetooth.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Onetooth</Filter>
+    </ClCompile>
+    <ClCompile Include="Deathshead.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Deathshead</Filter>
+    </ClCompile>
+    <ClCompile Include="Psychic_horf.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychic_horf</Filter>
+    </ClCompile>
+    <ClCompile Include="Nerveending.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Nerveending</Filter>
+    </ClCompile>
+    <ClCompile Include="HorfFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Horf</Filter>
+    </ClCompile>
+    <ClCompile Include="BoomflyFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\BoomFly</Filter>
+    </ClCompile>
+    <ClCompile Include="full_flyFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\full_fly</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathsheadFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Deathshead</Filter>
+    </ClCompile>
+    <ClCompile Include="NeveendingFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Nerveending</Filter>
+    </ClCompile>
+    <ClCompile Include="Psychic_horfFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychic_horf</Filter>
+    </ClCompile>
+    <ClCompile Include="OnetoothFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Onetooth</Filter>
+    </ClCompile>
+    <ClCompile Include="PsychicmawFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychicmaw</Filter>
+    </ClCompile>
+    <ClCompile Include="RedboomflyFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redboomfly</Filter>
+    </ClCompile>
+    <ClCompile Include="Host.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Host</Filter>
+    </ClCompile>
+    <ClCompile Include="Dinga.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dinga</Filter>
+    </ClCompile>
+    <ClCompile Include="Dip.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dip</Filter>
+    </ClCompile>
+    <ClCompile Include="Moms_hand.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Moms_hand</Filter>
+    </ClCompile>
+    <ClCompile Include="Turret.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="Sucker.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Sucker</Filter>
+    </ClCompile>
+    <ClCompile Include="Squirt.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Squirt</Filter>
+    </ClCompile>
+    <ClCompile Include="Redmaw.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redmaw</Filter>
+    </ClCompile>
+    <ClCompile Include="DingaFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dinga</Filter>
+    </ClCompile>
+    <ClCompile Include="DipFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dip</Filter>
+    </ClCompile>
+    <ClCompile Include="HostFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Host</Filter>
+    </ClCompile>
+    <ClCompile Include="Moms_handFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Moms_hand</Filter>
+    </ClCompile>
+    <ClCompile Include="RedmawFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redmaw</Filter>
+    </ClCompile>
+    <ClCompile Include="SquirtFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Squirt</Filter>
+    </ClCompile>
+    <ClCompile Include="SuckerFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Sucker</Filter>
+    </ClCompile>
+    <ClCompile Include="TurretFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlsBackground.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Spikes.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="PitTop.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitLeft.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitBottom.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitRight.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitCenter.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitLeftBottom.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitRightBottom.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitLeftTop.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="PitRightTop.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtectionFly.cpp">
+      <Filter>Contents\Actor\Play\Player\ItemActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Player_ItemCostume.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_SadOnion.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="MomBody.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomBody</Filter>
+    </ClCompile>
+    <ClCompile Include="MomBodyFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomBody</Filter>
+    </ClCompile>
+    <ClCompile Include="MomLeg.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomLeg</Filter>
+    </ClCompile>
+    <ClCompile Include="MomLegFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomLeg</Filter>
+    </ClCompile>
+    <ClCompile Include="MOMBoss.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="MomBossFSM.cpp">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="EndScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PoofEffect.cpp">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="BombEffect.cpp">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyDieEffect.cpp">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartEffect.cpp">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_Momslipstick.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_wirehanger.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopItem.cpp">
+      <Filter>Contents\Actor\Play\MapObject\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_HolyGrail_Body.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_HolyGrail.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_haloofflies.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_HolyGrail.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_lunch.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_momslipstick.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_thesadonion.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Wirecoathanger.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_brotherbobby.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_sackofpennies.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_littlechad.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_familiar_sistermaggie.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="Familiar.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="Familiar_brotherbobby.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="Familiar_littlechad.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="Familiar_sackofpennies.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="Familiar_sistermaggie.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Active_Necronomicon.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="ActiveItem.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Active_Necronomicon.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Active_Kamikaze.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Active_Kamikaze.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemEffect.cpp">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxItem.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PickUpItem\BoxItem</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxItemFSM.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PickUpItem\BoxItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_mutantspider.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_spoonbender.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_mutantspider.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Polyphemus.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_catoninetails.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Costume_spoonbender.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_catoninetails.cpp">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClCompile>
+    <ClCompile Include="DieUI.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBackSelect.cpp">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="TitleBackGround_ksj.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Title_Title.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Title_Start.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Contents\Actor\Play\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Contents\Actor\Play\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="CCharacterInfo.h">
+      <Filter>Contents\Actor\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectBackGround.h">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectMouse.h">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClInclude>
+    <ClInclude Include="Tears.h">
+      <Filter>Contents\Actor\Play\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomInfo.h">
+      <Filter>Contents\Actor\Play\RoomInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="PickUpItem.h">
+      <Filter>Contents\Actor\Play\MapObject\PickUpItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Itemaltar.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMap.h">
+      <Filter>Contents\Actor\UI\MiniMap</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeActor.h">
+      <Filter>Contents\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectFadeIn.h">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicValue.h" />
+    <ClInclude Include="Fly.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Fly</Filter>
+    </ClInclude>
+    <ClInclude Include="Pooter.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Pooter</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTear.h">
+      <Filter>Contents\Actor\Play\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="MapCollider.h">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayBackGround.h">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayFadeOut.h">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBoss.h">
+      <Filter>Contents\Actor\Play\Enemy\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomEditor.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomEditorBackground.h">
+      <Filter>Contents\Actor\RoomEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="BossAniActors.h">
+      <Filter>Contents\Actor\Play\BossAniActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>Contents\Actor\Play\MapObject\Object\Bomb</Filter>
+    </ClInclude>
+    <ClInclude Include="BossUI.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HPUI.h">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="BombUI.h">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinUI.h">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyUI.h">
+      <Filter>Contents\Actor\UI\PlayerUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Poop.h">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Stone.h">
+      <Filter>Contents\Actor\Play\MapObject\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="BonFire.h">
+      <Filter>Contents\Actor\Play\MapObject\Object\BonFire</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Horf.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Horf</Filter>
+    </ClInclude>
+    <ClInclude Include="Boomfly.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\BoomFly</Filter>
+    </ClInclude>
+    <ClInclude Include="Redboomfly.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redboomfly</Filter>
+    </ClInclude>
+    <ClInclude Include="full_fly.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\full_fly</Filter>
+    </ClInclude>
+    <ClInclude Include="Psychicmaw.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychicmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="Onetooth.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Onetooth</Filter>
+    </ClInclude>
+    <ClInclude Include="Deathshead.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Deathshead</Filter>
+    </ClInclude>
+    <ClInclude Include="Psychic_horf.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Psychic_horf</Filter>
+    </ClInclude>
+    <ClInclude Include="Nerveending.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Nerveending</Filter>
+    </ClInclude>
+    <ClInclude Include="Host.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Host</Filter>
+    </ClInclude>
+    <ClInclude Include="Dinga.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dinga</Filter>
+    </ClInclude>
+    <ClInclude Include="Dip.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Dip</Filter>
+    </ClInclude>
+    <ClInclude Include="Moms_hand.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Moms_hand</Filter>
+    </ClInclude>
+    <ClInclude Include="Turret.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Turret</Filter>
+    </ClInclude>
+    <ClInclude Include="Sucker.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Sucker</Filter>
+    </ClInclude>
+    <ClInclude Include="Squirt.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Squirt</Filter>
+    </ClInclude>
+    <ClInclude Include="Redmaw.h">
+      <Filter>Contents\Actor\Play\Enemy\Normal\Redmaw</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlsBackground.h">
+      <Filter>Contents\Actor\Play\MapObject\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Spikes.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="PitTop.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitLeft.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitBottom.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitRight.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitCenter.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitLeftBottom.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitRightBottom.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitLeftTop.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="PitRightTop.h">
+      <Filter>Contents\Actor\Play\MapObject\Map\Pit</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtectionFly.h">
+      <Filter>Contents\Actor\Play\Player\ItemActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Player_ItemCostume.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_SadOnion.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="MomBody.h">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomBody</Filter>
+    </ClInclude>
+    <ClInclude Include="MomLeg.h">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss\MomLeg</Filter>
+    </ClInclude>
+    <ClInclude Include="MOMBoss.h">
+      <Filter>Contents\Actor\Play\Enemy\Boss\MomBoss</Filter>
+    </ClInclude>
+    <ClInclude Include="EndScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="PoofEffect.h">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="BombEffect.h">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyDieEffect.h">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartEffect.h">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_Momslipstick.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_wirehanger.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopItem.h">
+      <Filter>Contents\Actor\Play\MapObject\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_HolyGrail_Body.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_HolyGrail.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_haloofflies.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_HolyGrail.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_lunch.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_momslipstick.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_thesadonion.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Wirecoathanger.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_brotherbobby.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_sackofpennies.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_littlechad.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_familiar_sistermaggie.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="Familiar.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="Familiar_brotherbobby.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="Familiar_littlechad.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="Familiar_sackofpennies.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="Familiar_sistermaggie.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Familiar</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Active_Necronomicon.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveItem.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Active_Necronomicon.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Active_Kamikaze.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\ActiveItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Active_Kamikaze.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemEffect.h">
+      <Filter>Contents\Actor\Play\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxItem.h">
+      <Filter>Contents\Actor\Play\MapObject\PickUpItem\BoxItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_mutantspider.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_spoonbender.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Polyphemus.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_mutantspider.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_catoninetails.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Costume_spoonbender.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_catoninetails.h">
+      <Filter>Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making</Filter>
+    </ClInclude>
+    <ClInclude Include="DieUI.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBackSelect.h">
+      <Filter>Contents\Actor\Select</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{1219b46c-fa78-4648-b0c5-a84e607a159a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor">
+      <UniqueIdentifier>{2abe14ad-c091-458e-ba8e-957287e38a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene">
+      <UniqueIdentifier>{176c519a-b93c-4334-a0b4-544bdec41e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Title">
+      <UniqueIdentifier>{5a9fcf43-a2f8-4c5e-a545-a3b9279efc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\UI">
+      <UniqueIdentifier>{04bd3f4c-051b-41ae-934c-3331f1196690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\UI\MiniMap">
+      <UniqueIdentifier>{b0c2c5ab-1cbd-47f9-800e-f9a3e09a9d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play">
+      <UniqueIdentifier>{f453672b-9187-4952-9b91-2a3720ecfb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Player">
+      <UniqueIdentifier>{18421354-b36c-4096-a569-162255058c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject">
+      <UniqueIdentifier>{cb994908-f28c-4eaf-bbce-da4a8b958e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy">
+      <UniqueIdentifier>{7bcac845-0998-403f-af60-6eb6ef588b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Select">
+      <UniqueIdentifier>{903a3105-7f0f-4476-8883-672ac1dbe35a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Bullet">
+      <UniqueIdentifier>{b409ab49-1325-439e-9d8b-1316861ee13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal">
+      <UniqueIdentifier>{e364effd-e6df-444a-b752-fa87013b746f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Boss">
+      <UniqueIdentifier>{bec56bee-00c0-42da-be39-ffe16d5b43f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Pooter">
+      <UniqueIdentifier>{04963b3f-08c0-467e-b5a1-186be40aa45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Map">
+      <UniqueIdentifier>{5ded4074-e286-4422-8263-16d4911192ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\RoomEditor">
+      <UniqueIdentifier>{aafd410c-0858-4723-bcff-6bdd569c2311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\BossAniActor">
+      <UniqueIdentifier>{67a7563f-6fa2-4f23-bf59-da22765f9601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\UI\PlayerUI">
+      <UniqueIdentifier>{22718e7b-4e4c-489d-91f6-e529c3833291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Object">
+      <UniqueIdentifier>{c66610c9-73d8-4f88-9fdb-1daf3f97ab79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Object\BonFire">
+      <UniqueIdentifier>{86cfb443-6491-4740-a180-fffe5b8493ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem">
+      <UniqueIdentifier>{543b3802-df35-4617-8e7b-b31d2e7ab3e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\Collection_Item">
+      <UniqueIdentifier>{20c2ef67-83c8-4add-af18-cf5c3a87cec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item">
+      <UniqueIdentifier>{d499188c-09c5-4caf-8f46-028f4591deff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Horf">
+      <UniqueIdentifier>{14a6cfc1-af55-408a-ab86-59e928767d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\BoomFly">
+      <UniqueIdentifier>{9a745cb2-36e8-45cc-9ace-c4036dd45bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Redboomfly">
+      <UniqueIdentifier>{e413d1bf-c161-44fc-bc95-550973d5587d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\full_fly">
+      <UniqueIdentifier>{6c4fab3a-ee62-41e6-8a4e-72820dd5a5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Psychicmaw">
+      <UniqueIdentifier>{917970fb-fd68-4d2d-89b8-d23a0db1a7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Onetooth">
+      <UniqueIdentifier>{6e43624b-a652-4f6d-8278-f49698f60419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Deathshead">
+      <UniqueIdentifier>{59360e35-848a-4546-8af7-b7079ce61608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Psychic_horf">
+      <UniqueIdentifier>{3c616572-94a5-4f43-b032-2a6179f31171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Nerveending">
+      <UniqueIdentifier>{b8bc30e8-de4b-4a57-8af1-6e94360a7c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PickUpItem">
+      <UniqueIdentifier>{f7800ad3-79dd-4b18-940c-1c91bcb838b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Object\Bomb">
+      <UniqueIdentifier>{79635003-11b7-4f67-9f32-65d7d486f2ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Map\Grid">
+      <UniqueIdentifier>{fab19b9b-b487-48a5-a8c1-b45d603f9db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Map\Pit">
+      <UniqueIdentifier>{a24d8bfc-afd7-4850-bd97-618f66fbd4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Player\ItemActor">
+      <UniqueIdentifier>{259a1645-2b61-4ef5-bc48-673a7dfd7c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Boss\MomBoss">
+      <UniqueIdentifier>{c2376728-a9a0-47df-89d7-78deca4360cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Boss\MomBoss\MomBody">
+      <UniqueIdentifier>{d0f73ed8-499a-4be3-b942-0613a2d2b833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Boss\MomBoss\MomLeg">
+      <UniqueIdentifier>{4b649ebb-5fdd-4330-8432-b3297c408f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\RoomInfo">
+      <UniqueIdentifier>{020c95d8-71a8-4bd3-afcd-7cc726393d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Dinga">
+      <UniqueIdentifier>{1dd773a8-29fd-48ff-953b-f630d45fa88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Dip">
+      <UniqueIdentifier>{f97a4f10-bda2-4439-b119-4909c65fd97e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Host">
+      <UniqueIdentifier>{f8ce5b06-0cf9-4b27-9688-5b779c55783d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Moms_hand">
+      <UniqueIdentifier>{6ca6aaa0-21b4-4a11-a3ca-478e14af8c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Redmaw">
+      <UniqueIdentifier>{18cc4270-04d9-4f5c-a3a4-e2631cc32a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Squirt">
+      <UniqueIdentifier>{a64d8a87-a50a-4370-8a93-6b023c9f3361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Sucker">
+      <UniqueIdentifier>{951f70f0-83d4-4166-b12a-c25ad0a241ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Turret">
+      <UniqueIdentifier>{0660715d-f830-45b7-88e9-7fbd01030f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Enemy\Normal\Fly">
+      <UniqueIdentifier>{2854083b-1c3c-45f5-81ed-2a1a7ea97680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\Effect">
+      <UniqueIdentifier>{6deb1be1-69a9-4451-86cf-5b9d80b1546f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume">
+      <UniqueIdentifier>{7b7e7f87-56cd-4555-9977-b38b22d4b8d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\Shop">
+      <UniqueIdentifier>{22c88207-6229-4c6b-bfe0-3dbe20a43b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Item_">
+      <UniqueIdentifier>{9735221d-e53a-42e5-9518-e8085a97022a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\Familiar">
+      <UniqueIdentifier>{557d69b5-b700-430b-8227-fab026a747e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\ActiveItem">
+      <UniqueIdentifier>{56dc5b94-9d90-41f4-bc4d-44ab7b5c234b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PickUpItem\BoxItem">
+      <UniqueIdentifier>{c36aae15-3a07-4651-bdb3-f6ed7ab19a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\Collection_Item\Item\Making">
+      <UniqueIdentifier>{0a28dc6b-2a5e-44b8-99e2-a73469652b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Play\MapObject\PlayerItem\PlayerCostume\Making">
+      <UniqueIdentifier>{96228345-8d4d-4196-a906-d7ac004dcf77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
