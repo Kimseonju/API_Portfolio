@@ -15,7 +15,6 @@ class EngineFSM
 		void(EventTarget::* m_StartFunc)();
 		void(EventTarget::* m_EndFunc)();
 		void(EventTarget::* m_StayFunc)();
-
 	public:
 		void Start()
 		{
@@ -25,8 +24,6 @@ class EngineFSM
 			}
 			(m_Obj->*m_StartFunc)();
 		}
-
-
 		void End()
 		{
 			if (nullptr == m_EndFunc)
@@ -35,7 +32,6 @@ class EngineFSM
 			}
 			(m_Obj->*m_EndFunc)();
 		}
-
 		void Update()
 		{
 			if (nullptr == m_StayFunc)
@@ -53,23 +49,18 @@ class EngineFSM
 		{
 		}
 
-
-
 	};
-
-
-
 private:
 	std::map<EngineString, State>m_State;
 	State* m_CurState;
 
 
 public:
-	void CreateState(EngineString _StateName, //시간
+	void CreateState(EngineString _StateName, 
 		EventTarget* _Obj,
-		void(EventTarget::* _StayFunc)(),//타이머가 끝날때 실행되는 함수
-		void(EventTarget::* _StartFunc)() = nullptr, //시작할때 실행되는 함수
-		void(EventTarget::* _EndFunc)() = nullptr)//startFunc가 실행되고 End가 실행되기전까지 계속 실행되는 함수
+		void(EventTarget::* _StayFunc)(),
+		void(EventTarget::* _StartFunc)() = nullptr, 
+		void(EventTarget::* _EndFunc)() = nullptr)
 	{
 	
 		if (m_State.end() != m_State.find(_StateName))
