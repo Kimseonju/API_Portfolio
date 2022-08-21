@@ -3,7 +3,6 @@
 #include "CCharacterInfo.h"
 class EngineRendererAnim;
 class EngineRendererBasic;
-//이동시 가속도필요
 class PitRightTop : public EngineActor
 {
 private: // Static Var

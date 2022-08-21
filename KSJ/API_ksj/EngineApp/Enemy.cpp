@@ -32,7 +32,7 @@ void Enemy::Start()
 	GetMonsterFSM()->CreateState(L"Attack", this, &Enemy::AttackStay, &Enemy::AttackStart, &Enemy::AttackEnd);
 	GetMonsterFSM()->CreateState(L"Die", this, &Enemy::DieStay, &Enemy::DieStart, &Enemy::DieEnd);
 	GetMonsterFSM()->ChangeState(L"Find");
-	//방선택됬을때만 키기
+
 	Off();
 }
 

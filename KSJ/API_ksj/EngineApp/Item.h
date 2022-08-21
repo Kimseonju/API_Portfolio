@@ -3,9 +3,6 @@
 #include "LogicValue.h"
 #include <functional>
 
-// 분류 : 
-// 용도 : 
-// 설명 : 아이템 기본클래스 담당 (상속예정)
 class EngineRendererBasic;
 class Itemaltar;
 class Item : public EngineActor

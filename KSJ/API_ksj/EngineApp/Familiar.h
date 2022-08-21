@@ -48,6 +48,8 @@ public: //member
 	virtual void FamiliarEvent() {};
 	//패밀리어가 발사할떄
 	virtual void FireEvent(const float4& dir) {};
+
+
 	void AngleCheck(float Angle);
 };
 
